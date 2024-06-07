@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>LOGIN</title>
+		<link rel="stylesheet" href="css/loginstu.css">
+	</head>
+	<body>
+		<a href="index.html"><h4>Back to Home</h4></a>
+		<div class="container" id="container">
+			<div class="form-container sign-up-container">
+				<form action="/sign_up" method="POST">
+					<h1>Create Account</h1>
+					<span>Enter Your details</span>
+					<input type="text" name="name" placeholder="Name" required />
+					<input type="email" name="email" placeholder="abc@gmail.com" required />
+					<input type="password" name="password" placeholder="Password" required />
+					<input type="password" name="confirmPassword" placeholder="Confirm Password" required />
+					<button type="submit">Sign Up</button>
+				</form>
+			</div>
+			<div class="form-container sign-in-container">
+				<form action="/YOUR_LOGIN_ROUTE" method="POST">
+					<h1>LOGIN</h1>
+					<span>Enter Your Login Details</span>
+					<input type="email" id="loginEmail" name="loginEmail" placeholder="Email" required />
+					<input type="password" id="loginPassword" name="loginPassword" placeholder="Password" required />
+					<a href="#">Forgot your password?</a>
+					<button type="submit">Log IN</button>
+				</form>
+				
+			</div>
+			<div class="overlay-container">
+				<div class="overlay">
+					<div class="overlay-panel overlay-left">
+						<h1>LOGIN</h1>
+						<p>If you already have account please login</p>
+						<button class="ghost" id="signIn">Log IN</button>
+					</div>
+					<div class="overlay-panel overlay-right">
+						<h1>Create Account</h1>
+						<p>Dont have Account?</p>
+						<button class="ghost" id="signUp">Sign Up</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/login.js"></script>
+		<script src="C:\Users\mayur\trial\index.js"></script>
+	</body>
+</html>

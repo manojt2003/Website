@@ -1,0 +1,65 @@
+<html><head><title>LOGIN</title>
+<link rel="stylesheet" href="css/loginuni.css"></head>
+<body>
+<a href="index.html"><h4>Back to Home</h4></a>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="/store_university" method="POST">
+			<h1>Create Account</h1>
+			
+			<span>Enter University details</span>
+			<input type="text" name = "collegeName" placeholder="College Name"  required />
+			<select name="collegeType" id=""  required >
+				<option value="#">Type of College</option>
+				<option value="Private">Private</option>
+				<option value="Govt">Govt</option>
+			</select>
+			<select name="city" id=""  required >
+				<option value="#">City</option>
+				<option value="Bengaluru">Bengaluru</option>
+				<option value="Mysuru">Mysuru</option>
+			</select>
+			<select name="state" id=""  required >
+				<option value="#">State</option>
+				<option value="Karnataka">Karnataka</option>
+				<option value="Kashmir">Kashmir</option>
+			</select>
+			<input type="email" name = "email" placeholder="Email ID"  required />
+			<input type="number" name="pinCode" id=""  placeholder="Pin Code"  required >
+			<input type="password" name="password" placeholder="Password" required  />
+			
+			<button type="submit">Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="/YOUR_LOGIN_ROUTE1" method ="POST">
+			<h1>LOGIN</h1>
+			
+			<span></span>
+			<input type="text" name="loginEmail" placeholder="College ID"  required  />
+			<input type="password" name="loginPassword" placeholder="Password"  required />
+			<a href="#">Forgot your password?</a>
+			<button type="submit">Log IN</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>LOGIN</h1>
+				<p>If you already have account please login</p>
+				<button class="ghost" id="signIn">Log IN</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Create Account</h1>
+				<p>Dont have Account?</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/login.js"></script>
+<script src=" C:\Users\Manoj\trial\index.js"></script>
+</body>
+</html>
